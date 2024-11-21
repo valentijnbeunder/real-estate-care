@@ -1,0 +1,59 @@
+{
+    "inspections": [
+      {
+        "type": "Damage recording",
+        "details": {
+          "location": "Office 3A",
+          "newDamage": true,
+          "damageType": "intentional",
+          "date": "2024-11-20",
+          "urgentActionRequired": true,
+          "description": "The window glass has been smashed."
+        }
+      },
+      {
+        "type": "Record deferred maintenance",
+        "details": {
+          "location": "Entrance hall",
+          "maintenanceType": "wood rot",
+          "urgentActionRequired": false,
+          "costEstimate": "500-1,500",
+          "description": "Door frame shows early signs of wood rot."
+        }
+      },
+      {
+        "type": "Inspect technical installations",
+        "details": {
+          "location": "Server room",
+          "installationType": "cooling",
+          "reportedIssues": "Cooling system not performing optimally under heavy load.",
+          "testProcedure": "link_to_test_procedure.pdf",
+          "approved": false,
+          "remarks": "Replacement of filters recommended."
+        }
+      },
+      {
+        "type": "Inventory modifications",
+        "details": {
+          "currentSituation": "link_to_documentation.pdf",
+          "modificationLocation": "Roof",
+          "performedBy": "tenant",
+          "modificationDescription": "Installation of solar panels.",
+          "actionToTake": "inspect",
+          "remarks": "No documentation available for roof load capacity."
+        }
+      },
+      {
+        "type": "Damage recording",
+        "details": {
+          "location": "Warehouse",
+          "newDamage": false,
+          "damageType": "wear and tear",
+          "date": "2024-11-15",
+          "urgentActionRequired": false,
+          "description": "Wear on carpet in walkway."
+        }
+      }
+    ]
+  }
+  
