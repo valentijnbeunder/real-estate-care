@@ -24,12 +24,12 @@
 
 <script>
 export default {
-  name: "WelcomePage", // Geef de component een duidelijke naam
+  name: "WelcomePage", 
 };
 </script>
 
 <style scoped>
-/* Stijlen voor de welkomstpagina */
+
 .welcome-card {
   max-width: 600px;
   margin: auto;
@@ -39,7 +39,7 @@ export default {
 }
 
 .text-primary {
-  color: #007bff; /* Gebruik een opvallende kleur voor de titel */
+  color: #007bff;
 }
 
 .welcome-text {
@@ -50,7 +50,7 @@ export default {
 }
 
 .v-divider {
-  background-color: #007bff; /* Geef de divider een kleur die past bij de stijl */
+  background-color: #007bff; 
 }
 </style>
 

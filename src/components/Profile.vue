@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12" sm="8" md="6">
-        <!-- Title -->
+
         <h1 class="text-center profile-title">Profile</h1>
         <v-divider class="mb-4"></v-divider>
 
@@ -49,7 +49,7 @@ export default {
     const handleLogout = () => {
       try {
         logout({
-          returnTo: window.location.origin, // Redirects after logout
+          returnTo: window.location.origin, 
         });
       } catch (error) {
         console.error("Logout failed:", error);

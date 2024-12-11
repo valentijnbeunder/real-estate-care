@@ -12,7 +12,7 @@
         </v-row>
 
         <v-row justify="center" class="mt-5">
-          <!-- Solar Panels Section -->
+          <!-- Solar Pannels Section -->
           <v-col cols="12" sm="6" class="text-center">
             <v-card class="mx-auto v-card-hover" elevation="2">
               <v-img
@@ -68,15 +68,15 @@
 export default {
   data() {
     return {
-      imageDialog: false, // Controls the dialog visibility
-      currentImage: '', // Stores the path of the currently clicked image
+      imageDialog: false, 
+      currentImage: '', 
     };
   },
   methods: {
     showImage(imagePath) {
       if (imagePath) {
         this.currentImage = imagePath;
-        this.imageDialog = true; // Open the dialog
+        this.imageDialog = true; 
       } else {
         console.error("Invalid image path provided");
       }
@@ -84,13 +84,13 @@ export default {
     checkQuery() {
       const queryImage = this.$route.query.image;
       if (queryImage) {
-        this.showImage(`/${queryImage}`); // Open the image specified in the query parameter
+        this.showImage(`/${queryImage}`); 
       }
     },
   },
   mounted() {
     try {
-      this.checkQuery(); // Check for query parameters on page load
+      this.checkQuery(); 
     } catch (error) {
       console.error("Failed to process query parameters:", error);
     }

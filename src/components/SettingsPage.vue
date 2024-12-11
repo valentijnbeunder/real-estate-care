@@ -57,7 +57,7 @@ export default {
         if (!isAuthenticated) {
           setTimeout(() => {
             router.push("/login");
-          }, 500); // Slight delay to ensure logout completes
+          }, 500); 
         }
       } catch (error) {
         console.error("Logout failed:", error);

@@ -57,18 +57,18 @@ export default {
       loginWithRedirect({
         screen_hint: "signup",
         authorizationParams: {
-          redirect_uri: window.location.origin + "/callback", // Redirect back to the current page
+          redirect_uri: window.location.origin + "/callback", 
         },
       }).catch((error) => {
         console.error("Error during registration redirect:", error);
       });
     };
 
-    // Logout function with optional parameters
+    // Logout function  
     const handleLogout = () => {
       logout({
         logoutParams: {
-          returnTo: window.location.origin, // Redirect to the current origin after logout
+          returnTo: window.location.origin, 
         },
       }).catch((error) => {
         console.error("Error during logout:", error);
@@ -100,7 +100,7 @@ export default {
 /* Styling for the custom buttons */
 .custom-btn {
   background: linear-gradient(to right, rgba(71, 94, 108, 1), rgba(20, 27, 31, 1));
-  color: #ffffff; /* White text for good contrast */
+  color: #ffffff; 
   border-radius: 4px;
   font-weight: bold;
   text-transform: uppercase;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul>
-      <!-- Loop through all inspections -->
+     
       <li
         v-for="(inspection, index) in inspections"
         :key="index"
@@ -54,17 +54,17 @@ import { fetchAssignedInspections } from "../services/inspectionService";
 export default {
   data() {
     return {
-      inspections: [], // Data for assigned inspections
+      inspections: [], 
     };
   },
   methods: {
     async loadAssignedInspections() {
       try {
         const data = await fetchAssignedInspections();
-        this.inspections = data || []; // Voorkom dat inspections `null` wordt
+        this.inspections = data || []; 
       } catch (error) {
         console.error("Failed to load assigned inspections:", error);
-        this.inspections = []; // Fallback naar een lege lijst
+        this.inspections = []; 
       }
     },
   },

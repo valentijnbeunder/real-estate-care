@@ -14,7 +14,7 @@
     <!-- Spacer om items naar rechts te duwen -->
     <v-spacer></v-spacer>
 
-    <!-- Instellingen-icoon -->
+    <!-- Instellingen-icon -->
     <v-btn icon @click="onSettingsClick" aria-label="Open settings">
       <v-icon>mdi-cog</v-icon>
     </v-btn>
@@ -76,7 +76,7 @@ export default {
   max-width: 100px;
   object-fit: contain;
   margin: auto;
-  cursor: pointer; /* Visuele feedback voor klikbaarheid */
+  cursor: pointer; 
 }
 
 /* Application Bar styling */

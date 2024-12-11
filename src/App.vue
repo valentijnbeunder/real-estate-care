@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <ApplicationBar /> <!-- ApplicationBar is placed globally -->
+    <ApplicationBar /> 
     <v-main>
-      <router-view /> <!-- Routed components are displayed here -->
+      <router-view /> 
     </v-main>
-    <NavigationBar /> <!-- NavigationBar is placed globally -->
+    <NavigationBar /> 
   </v-app>
 </template>
 
