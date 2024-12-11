@@ -45,7 +45,7 @@ const routes = [
   },
   {
     path: "/callback",
-    component: () => import("./views/Callback.vue"), // Een eenvoudige leeg component
+    component: () => import("../views/Callback.vue"), 
   },
 ];
 
