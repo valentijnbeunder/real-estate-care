@@ -1,24 +1,21 @@
 <template>
   <v-app>
-    <ApplicationBar /> <!-- Application Bar Component -->
-
+    <ApplicationBar /> <!-- ApplicationBar is placed globally -->
     <v-main>
-      <MainContent /> <!-- Main Content Component -->
-      <NavigationBar /> <!-- Navigation Bar Component -->
+      <router-view /> <!-- Routed components are displayed here -->
     </v-main>
+    <NavigationBar /> <!-- NavigationBar is placed globally -->
   </v-app>
 </template>
 
 <script>
 import ApplicationBar from './components/ApplicationBar.vue';
 import NavigationBar from './components/NavigationBar.vue';
-import MainContent from './components/MainContent.vue';
 
 export default {
   components: {
     ApplicationBar,
     NavigationBar,
-    MainContent,
   },
 };
 </script>
