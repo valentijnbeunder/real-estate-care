@@ -62,7 +62,7 @@ const auth0Config = {
   domain: "dev-ug2h8yvri8g5fw1i.us.auth0.com",
   clientId: "ywzqWpfl98V8qKpCBp9twEGRapse1fKQ",
   authorizationParams: {
-    redirect_uri: window.location.origin,
+    redirect_uri: window.location.origin + "/callback",
   },
 };
 console.log("Auth0 Config Debug:", auth0Config); // Debugging information

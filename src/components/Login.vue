@@ -57,7 +57,7 @@ export default {
       loginWithRedirect({
         screen_hint: "signup",
         authorizationParams: {
-          redirect_uri: window.location.origin, // Redirect back to the current page
+          redirect_uri: window.location.origin + "/callback", // Redirect back to the current page
         },
       }).catch((error) => {
         console.error("Error during registration redirect:", error);
