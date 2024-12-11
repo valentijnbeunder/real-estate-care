@@ -42,7 +42,11 @@ const routes = [
     path: '/profile',
     name: 'Profile',
     component: Profile,
-  }
+  },
+  {
+    path: "/callback",
+    component: () => import("./views/Callback.vue"), // Een eenvoudige leeg component
+  },
 ];
 
 const router = createRouter({

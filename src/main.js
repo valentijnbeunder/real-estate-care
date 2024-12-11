@@ -62,10 +62,11 @@ const auth0Config = {
   domain: "dev-ug2h8yvri8g5fw1i.us.auth0.com",
   clientId: "ywzqWpfl98V8qKpCBp9twEGRapse1fKQ",
   authorizationParams: {
-    redirect_uri: window.location.origin + "/callback",
+    redirect_uri: window.location.origin + "/callback", // Dynamic redirect URI
   },
 };
 console.log("Auth0 Config Debug:", auth0Config); // Debugging information
+console.log("Auth0 redirect URI:", window.location.origin + "/callback"); // Added log for redirect URI
 
 // Create and mount the Vue app
 const app = createApp(App);
